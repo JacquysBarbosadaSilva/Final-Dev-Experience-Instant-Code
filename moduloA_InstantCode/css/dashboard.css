@@ -1,0 +1,149 @@
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.kpi-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--cor-borda);
+    transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-hover);
+}
+
+.kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.kpi-icon {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.kpi-trend {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.kpi-trend.positive {
+    background: rgba(0, 201, 167, 0.1);
+    color: #00684a;
+}
+
+.kpi-trend.negative {
+    background: rgba(231, 76, 60, 0.1);
+    color: #d63031;
+}
+
+.kpi-trend.neutral {
+    background: rgba(255, 184, 0, 0.1);
+    color: #e8590c;
+}
+
+.kpi-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-bottom: 8px;
+}
+
+.kpi-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+    margin-bottom: 4px;
+}
+
+.kpi-description {
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th {
+    background: #f8f9fa;
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+    border-bottom: 2px solid var(--cor-borda);
+}
+
+.data-table td {
+    padding: 16px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.data-table tr:hover {
+    background: #f8f9fa;
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge-error {
+    background: var(--cor-erro);
+    color: white;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--cor-texto-secundario);
+}
+
+.empty-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 0 16px;
+    }
+}           

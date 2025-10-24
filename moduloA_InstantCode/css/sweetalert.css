@@ -1,0 +1,86 @@
+.swal2-popup {
+    border-radius: 16px !important;
+    box-shadow: var(--sombra-hover) !important;
+    border: 1px solid var(--cor-borda) !important;
+    padding: 2rem !important;
+    animation: fadeIn 0.3s ease-out !important;
+}
+
+.swal2-title {
+    color: var(--cor-texto) !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 1rem !important;
+}
+
+.swal2-html-container {
+    color: var(--cor-texto-secundario) !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+}
+
+.swal2-icon {
+    transform: scale(1.2) !important;
+    margin-bottom: 1rem !important;
+}
+
+.swal2-success .swal2-success-ring {
+    border-color: var(--cor-quaternaria) !important;
+}
+
+.swal2-success [class^='swal2-success-line'] {
+    background-color: var(--cor-quaternaria) !important;
+}
+
+.swal2-error [class^='swal2-x-mark-line'] {
+    background-color: var(--cor-erro) !important;
+}
+
+.swal2-warning {
+    border-color: var(--cor-alerta) !important;
+    color: var(--cor-alerta) !important;
+}
+
+.swal2-info {
+    border-color: var(--cor-primaria) !important;
+    color: var(--cor-primaria) !important;
+}
+
+.swal2-confirm {
+    background: var(--gradiente-primario) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.swal2-confirm:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(15, 166, 182, 0.3) !important;
+}
+
+.swal2-cancel {
+    background: transparent !important;
+    border: 2px solid var(--cor-borda) !important;
+    border-radius: 12px !important;
+    padding: 12px 24px !important;
+    font-weight: 600 !important;
+    color: var(--cor-texto) !important;
+    transition: all 0.3s ease !important;
+}
+
+.swal2-cancel:hover {
+    border-color: var(--cor-primaria) !important;
+    color: var(--cor-primaria) !important;
+    transform: translateY(-1px) !important;
+}
+
+.swal2-success {
+    border-color: var(--cor-quaternaria) !important;
+    color: var(--cor-quaternaria) !important;
+}
+
+.swal2-timer-progress-bar {
+    background: var(--gradiente-primario) !important;
+}
